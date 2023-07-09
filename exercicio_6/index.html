@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>somando números</h1>
+    <button onclick="soma()">iniciar a soma</button>
+        <section id="res">
+            <p>o resultado irá aparecer aqui...</p>
+
+            </section>
+
+     <script>
+        function soma() {
+            let n1 = number(prompt('insira aqui um número'))
+            let n2 = number(prompt('insira outro número'))
+            soma = n1+n2
+
+            let res = document.querySelector('section#res')
+            res.innerHTML = `<p>A soma de ${n1} e ${n2} é ${soma} ! </p>`
+
+        }
+
+
+
+
+    </script>
+    
+    </body>
+
+
+</html>
