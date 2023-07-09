@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+    <h1> média</h1>
+    
+    <button onclick= "soma()">iniciar a média</button>
+   
+        <section id="res">
+            <p>o resultado irá aparecer aqui...</p>
+
+            </section>
+
+     <script>
+        function soma() {
+            let nome = prompt('qual nome da pessoa para realizar a média?')
+            let n1 = Number(prompt('insira aqui um número'))
+            let n2 = Number(prompt('insira outro número'))
+            media = n1+n2/2
+
+            let res = document.querySelector('section#res')
+            res.innerHTML = '<p>carregando</p>'
+            res.innerHTML += `<p>... </p>`
+            res.innerHTML += `<p>A média de ${n1} e ${n2} é ${media}</p>`
+
+        }
+
+
+
+
+    </script>
+    
+    </body>
+
+
+</html>
