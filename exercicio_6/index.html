@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>somando números</h1>
-    <button onclick="soma()">iniciar a soma</button>
+    
+    <button onclick= "soma()">iniciar a soma</button>
+   
         <section id="res">
             <p>o resultado irá aparecer aqui...</p>
 
@@ -16,8 +18,8 @@
 
      <script>
         function soma() {
-            let n1 = number(prompt('insira aqui um número'))
-            let n2 = number(prompt('insira outro número'))
+            let n1 = Number(prompt('insira aqui um número'))
+            let n2 = Number(prompt('insira outro número'))
             soma = n1+n2
 
             let res = document.querySelector('section#res')
